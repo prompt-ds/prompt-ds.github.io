@@ -42,9 +42,7 @@ function App() {
   const [isTOCOpen, setIsTOCOpen] = useState(true);
   const [runTutorial, setRunTutorial] = useState(false);
   const [isAttachmentVisible, setIsAttachmentVisible] = useState(true);
-  const [tutorialCompleted, setTutorialCompleted] = useState(
-    localStorage.getItem('tutorialCompleted') === 'true'
-  );
+  const [tutorialCompleted, setTutorialCompleted] = useState(true);
 
   // 튜토리얼 단계 정의
   const tutorialSteps = [
@@ -591,7 +589,7 @@ function App() {
         )}
       </div>
 
-      {tutorialCompleted && currentSlide > 0 && (
+      {false && tutorialCompleted && currentSlide > 0 && (
         <button className="restart-tutorial" onClick={restartTutorial}>
           <HelpCircle size={20} />
           튜토리얼 다시보기
