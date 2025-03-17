@@ -47,8 +47,8 @@
           }
         ],
         "tools": ["ChatGPT"],
-        "group": "프롬프트 실습",
-        "number": 1
+        "group": "기본 기능 실습",
+        "number": 3
       },
       {
         "title": "요약/합성 - 애널리스트 리포트 요약",
