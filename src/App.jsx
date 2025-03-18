@@ -435,6 +435,7 @@ function App() {
           </div>
 
           <ul className={`slide-list ${!isTOCOpen ? 'hidden' : ''}`}>
+            {/* 
             <div className="auth-center">
               <a href="#" onClick={(e) => {
                 e.preventDefault();
@@ -443,6 +444,7 @@ function App() {
                 ChatGPT 인증번호 확인
               </a>
             </div>
+            */}
             {renderSlideList()}
           </ul>
         </div>
